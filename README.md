@@ -1,23 +1,22 @@
-# Praktik Kerja Management System
+# Management System
 
-Sistem manajemen praktik kerja dengan fitur multi-user dan role-based access control menggunakan Laravel 11 dan Tailwind CSS.
+Sistem manajemen dengan fitur multi-user dan role-based access control menggunakan Laravel 11 dan Tailwind CSS.
 
 ## 🚀 Fitur Utama
 
 - **Multi-User Authentication** dengan Laravel Breeze
 - **Role-Based Access Control** (Super Admin, Admin, User)
-- **Responsive Design** dengan Tailwind CSS
 - **Dashboard Terpisah** untuk setiap role
 - **User Management System** 
 - **Modern UI Components** dengan Alpine.js
 
+
 ## 🛠️ Tech Stack
 
-- **Backend:** Laravel 11
+- **Backend:** Laravel Framework 12.34.0
+- **Authentication:** Laravel Breeze 2.3.8
 - **Frontend:** Blade Templates, Tailwind CSS, Alpine.js
 - **Database:** MySQL
-- **Authentication:** Laravel Breeze
-- **Styling:** Tailwind CSS
 
 ## 📋 Requirements
 
@@ -32,8 +31,8 @@ Sistem manajemen praktik kerja dengan fitur multi-user dan role-based access con
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/MuchTrie/Praktik_Kerja.git
-cd Praktik_Kerja
+git clone https://github.com/MuchTrie/pra_kp.git
+cd pra_kpa
 ```
 
 ### 2. Install Dependencies
