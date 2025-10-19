@@ -1,0 +1,291 @@
+/* Custom CSS untuk PraKP - Tema Merah Hitam */
+
+/* Base Styles */
+body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 50%, #8b0000 100%);
+    color: white;
+    font-family: 'Figtree', sans-serif;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    background: linear-gradient(90deg, #000000 0%, #8b0000 100%);
+    box-shadow: 0 2px 4px rgba(220, 53, 69, 0.3);
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-custom .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #dc3545 !important;
+    transform: translateY(-1px);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #000000 0%, #330000 50%, #8b0000 100%);
+    min-height: 100vh;
+}
+
+/* Card Styles */
+.card-custom {
+    background: linear-gradient(135deg, #8b0000 0%, #000000 100%);
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(220, 53, 69, 0.3);
+}
+
+/* Button Styles */
+.btn-custom {
+    background: linear-gradient(45deg, #dc3545 0%, #8b0000 100%);
+    border: none;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(45deg, #8b0000 0%, #dc3545 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
+    color: white;
+}
+
+/* Text Colors */
+.text-red-custom {
+    color: #dc3545 !important;
+}
+
+.text-light-custom {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Dashboard Specific Styles */
+.dashboard-body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 50%, #8b0000 100%);
+    min-height: 100vh;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+.alert-success {
+    background: linear-gradient(45deg, #28a745 0%, #155724 100%);
+    color: white;
+}
+
+.alert-danger {
+    background: linear-gradient(45deg, #dc3545 0%, #721c24 100%);
+    color: white;
+}
+
+/* Dropdown Styles */
+.dropdown-menu-dark {
+    background: linear-gradient(135deg, #8b0000 0%, #000000 100%);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+    background: rgba(220, 53, 69, 0.2);
+}
+
+/* Badge Styles */
+.badge.bg-danger {
+    background: linear-gradient(45deg, #dc3545 0%, #8b0000 100%) !important;
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .display-2 {
+        font-size: 2.5rem;
+    }
+    
+    .card-custom {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #dc3545 0%, #8b0000 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #8b0000 0%, #dc3545 100%);
+}
+
+/* Loading Animation */
+.spinner-custom {
+    border: 3px solid rgba(220, 53, 69, 0.3);
+    border-top: 3px solid #dc3545;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form Styles */
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-check-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(220, 53, 69, 0.3);
+}
+
+.form-check-input:checked {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875rem;
+}
+
+/* Footer Styles */
+footer {
+    background: #000000 !important;
+    border-top: 2px solid #dc3545;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+    border-color: rgba(220, 53, 69, 0.5);
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.2);
+}
+
+/* Statistics Cards */
+.stats-card {
+    background: linear-gradient(45deg, #dc3545 0%, #8b0000 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: scale(1.05);
+}
+
+/* Table Styles */
+.table-dark {
+    --bs-table-bg: rgba(0, 0, 0, 0.8);
+    --bs-table-border-color: rgba(220, 53, 69, 0.3);
+}
+
+.table-dark th {
+    background: linear-gradient(45deg, #dc3545 0%, #8b0000 100%);
+}
+
+/* Icon Styles */
+.icon-lg {
+    font-size: 3rem;
+    color: #dc3545;
+}
+
+.icon-md {
+    font-size: 1.5rem;
+}
+
+/* Utility Classes */
+.bg-gradient-custom {
+    background: linear-gradient(135deg, #8b0000 0%, #000000 100%);
+}
+
+.border-custom {
+    border-color: rgba(220, 53, 69, 0.3) !important;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
